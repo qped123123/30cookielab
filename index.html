@@ -203,14 +203,15 @@ nav::-webkit-scrollbar { display: none; }
 }
 .wt-btns { display: flex; gap: 5px; align-items: center; }
 .wb-btn {
-  width: 13px; height: 13px; border-radius: 3px;
+  width: 14px; height: 14px; border-radius: 3px;
   border: none; cursor: pointer;
   font-size: 9px; font-weight: 700; color: #fff;
   display: flex; align-items: center; justify-content: center;
+  line-height: 1;
 }
-.wbc { background: #FF7BAC; }   /* 닫기 - 핑크 */
-.wbm { background: #C9A0F0; }   /* 최대화 - 연보라 */
-.wbx { background: #C9A0F0; }   /* 최소화 - 연보라 */
+.wbc { background: #FF7BAC; }   /* 닫기 X - 핑크 */
+.wbm { background: #B8A0E8; }   /* 최대화 □ - 연보라 */
+.wbx { background: #B8A0E8; }   /* 최소화 - - 연보라 */
 
 /* =====================================================
    HERO
@@ -603,9 +604,9 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); }
   <div class="ni"><span class="ni-star">☆</span> 첫 구매 5% 쿠폰 지급</div>
   <div class="ni"><span class="ni-star">☆</span> 3만원 이상 무료배송</div>
   <div class="nb-os">
-    <button class="os-btn os-m" title="최소화"></button>
-    <button class="os-btn os-x" title="최대화"></button>
-    <button class="os-btn os-c" title="닫기"></button>
+    <button class="os-btn os-m" title="최소화">–</button>
+    <button class="os-btn os-x" title="최대화">□</button>
+    <button class="os-btn os-c" title="닫기">✕</button>
   </div>
 </div>
 
@@ -680,9 +681,9 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); }
     <div class="wt">
       <div class="wt-label">💜 NEW ARRIVALS 2026</div>
       <div class="wt-btns">
-        <button class="wb-btn wbx" title="최대화"></button>
-        <button class="wb-btn wbm" title="최소화"></button>
-        <button class="wb-btn wbc" onclick="cx('hb')" title="닫기"></button>
+        <button class="wb-btn wbx" title="최소화">–</button>
+        <button class="wb-btn wbm" title="최대화">□</button>
+        <button class="wb-btn wbc" onclick="cx('hb')" title="닫기">✕</button>
       </div>
     </div>
     <div class="hero-grid">
@@ -743,9 +744,9 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); }
       <div class="wt">
         <div class="wt-label">✦✧</div>
         <div class="wt-btns">
-          <button class="wb-btn wbx"></button>
-          <button class="wb-btn wbm"></button>
-          <button class="wb-btn wbc" onclick="cx('wb1')"></button>
+          <button class="wb-btn wbx">–</button>
+          <button class="wb-btn wbm">□</button>
+          <button class="wb-btn wbc" onclick="cx('wb1')">✕</button>
         </div>
       </div>
       <div class="pi">
@@ -764,9 +765,9 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); }
       <div class="wt">
         <div class="wt-label">💜 MEMBERS ONLY</div>
         <div class="wt-btns">
-          <button class="wb-btn wbx"></button>
-          <button class="wb-btn wbm"></button>
-          <button class="wb-btn wbc" onclick="cx('wb2')"></button>
+          <button class="wb-btn wbx">–</button>
+          <button class="wb-btn wbm">□</button>
+          <button class="wb-btn wbc" onclick="cx('wb2')">✕</button>
         </div>
       </div>
       <div class="pi">
@@ -789,9 +790,9 @@ footer { background:var(--bg-footer); border-top:1px solid var(--border); }
       <div class="wt">
         <div class="wt-label">✦✧</div>
         <div class="wt-btns">
-          <button class="wb-btn wbx"></button>
-          <button class="wb-btn wbm"></button>
-          <button class="wb-btn wbc" onclick="cx('wb3')"></button>
+          <button class="wb-btn wbx">–</button>
+          <button class="wb-btn wbm">□</button>
+          <button class="wb-btn wbc" onclick="cx('wb3')">✕</button>
         </div>
       </div>
       <div class="pi">
